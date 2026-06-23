@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "pyside6>=6.11.1",
     "sounddevice>=0.5.5",
     "soundfile>=0.14.0",
     "vosk>=0.3.45",
