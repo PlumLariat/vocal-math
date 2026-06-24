@@ -26,4 +26,20 @@ class MathProblem:
     def get_answer(self) -> int:
         return self.answer
     
-    def _init_easy(type:Type) -> 
+    def _init_easy(self, type:Type) -> tuple[int, int, int]:
+        num1 = randint(1, 999)
+        num2 = randint(1, 999)
+        answer = 0
+
+        if type == Type.ADDITION:
+            answer = num1 + num2
+        if type == Type.SUBTRACTION:
+            answer = num1 - num2
+        if type == Type.MULTIPLICATION:
+            answer = num1 * num2
+        if type == Type.DIVISION:
+            answer = num1 // num2
+
+        return num1, num2, answer
+
+
